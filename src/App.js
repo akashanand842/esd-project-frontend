@@ -8,7 +8,9 @@ import { useState } from 'react';
 import Login from './component/Login'
 import HomePage from './component/HomePage';
 import Course from './component/Course';
-import Sidebar from './component/Sidebar';
+import Sidebar from './component/SideNav';
+import AddCourse from './component/AddCourse';
+import ShowCourses from './component/ShowCourses'
 
 
 function App() {
@@ -64,6 +66,30 @@ function App() {
       <Route path="/home">
         <Sidebar/>
         <HomePage course = {course} onDelete = {onDelete}/>
+      </Route>
+      <Route path="/add">
+        <div className='container'>
+          <div className='row'>
+              <div className='col-md-3'>
+                    <Sidebar/>
+              </div>
+              <div className='col-md-9'>
+                  <AddCourse />
+              </div>
+          </div>
+        </div>
+      </Route>
+      <Route path="/courses">
+        <div className='container'>
+          <div className='row'>
+              <div className='col-md-3'>
+                    <Sidebar/>
+              </div>
+              <div className='col-md-9'>
+                  <ShowCourses />
+              </div>
+          </div>
+        </div>
       </Route>
       <Route exact path="/">
         <Redirect to="/login" />

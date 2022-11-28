@@ -13,8 +13,9 @@ const HomePage = (props) => {
 
   return (
     <div className='container' >
-      <h3 className='my-3'>Course Lists</h3>
-      
+        <div className='row'>
+            <div className='col-md-9'></div>
+        </div>
     </div>
   )
 }
