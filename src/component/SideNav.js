@@ -21,13 +21,14 @@ const SideNav = ({children}) => {
         <Sidebar>
             <Menu>
                 <MenuItem>
-                     <Link to={"/add"}>Add Course</Link> 
+                     <Link to={"/add"}>Update</Link> 
                 </MenuItem>
                 <MenuItem>
                     <Link to={"/courses"}>View Courses</Link>
                 </MenuItem>
-                <MenuItem>Update</MenuItem>
-                <MenuItem>Delete</MenuItem>
+                <MenuItem>
+                    <Link to="/delete">Delete</Link>
+                </MenuItem>
             </Menu>
         </Sidebar>
     );

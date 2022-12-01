@@ -14,7 +14,7 @@ const HomePage = (props) => {
   return (
     <div className='container' >
         <div className='row'>
-            <div className='col-md-9'></div>
+            <div className='col-md-9'> Please Select your choice</div>
         </div>
     </div>
   )
